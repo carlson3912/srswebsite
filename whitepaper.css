@@ -1,0 +1,24 @@
+* {
+    background: #eeccfc;
+}
+
+
+
+      .title h1 {
+        font-size: 3rem;
+        background-color:#c10aee;
+        background-image: #c10aee;
+        background-size: 100%;
+        align-items: center;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+      }
+
+.section {
+    background-color:#ffffff;
+    width: 300px;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silk Road Swag</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">SILK ROAD SWAG</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Products</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#sign-up" class="navbar__links" id="home-page">Road Map</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup" onclick="openForm()">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <img src="bluenowrite.jpeg" alt= "SRS logo" width="250" height="250"/>
+      <!--  <h1 class="hero__heading"><span>Silk Road Swag</span></h1>-->  
+      <br>
+      <br>
+      <p class="hero__description"></p>
+        <p class="hero__description">Shopping as Usual</p>
+        <br/>
+        <p class="hero__description">Buisness Like Never</p>
+        <button class="main__btn"><a href="#services">Shop</a></button>
+        <br/>
+        <div class = "boxPurple">
+        <div onclick="openForm()">
+        <h1> Subscribe to Silk Road Swag Newsletter </h1>
+        <p1>Receive weekly news on the brand, tokenomics and development of the ecosystem. </p1>
+        </div>
+        <form id = "myForm" action="https://ml.kundenserver.de/cgi-bin/mailinglist.cgi" method="POST" target="_blank" class="subForm">
+          <input hidden checked name="subscribe_r" type="radio" value="subscribe" display="none">
+          <br />
+          Enter your email address:
+          <br />
+          <input type="text" maxlength="51" name="mailaccount_r" size="51" type="text" >
+          <br />
+          <br/>
+          Please confirm your email address:
+          <br />
+          <input type="text" maxlength="51" name="mailaccount2_r" size="51" type="text">
+          <br />
+          <input class="second__btn" id = "button_A" type="SUBMIT" value="Subscribe" type="subbutton" onclick="closeForm()" >
+          <br />
+          <input hidden name="FBMLNAME" type="hidden" value="announcement@silkroadswag.com">
+         
+          <input hidden name="FBLANG" type="hidden" value="en" >
+         
+          <input hidden name="FBURLERROR_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/error.en.html">
+         
+          <input hidden name="FBURLSUBSCRIBE_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/subscribe.en.html">
+         
+          <input hidden name="FBURLUNSUBSCRIBE_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/unsubscribe.en.html">
+          <br />
+          <input name="FBURLINVALID_L" type="hidden" value="https://ml.kundenserver.de/mailinglist/invalid.en.html">
+          <!--<button class="main__btn" onclick="closeForm()">Close</button> --!>
+        </form>
+        </div> 
+            
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <iframe width="400" height="250" src="https://www.youtube.com/embed/iZahoO95sTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <!-- <div class="main__img--card"><i class="fas fa-layer-group"></i></div> --> 
+          
+        </div>
+        <div class="main__content">
+          <h1>What is Silk Road Swag?</h1>
+          <p>SRS is an decentralized clothing brand built on top of the Polygon network. It is meant to test the bounds of Web 3.0 through reinventing what it means to be a buisness.</p>
+           
+            <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21317549.js"></script>
+            <button class="main__btn"><a href="whitepaper.html">Information Catalogue</a></button>
+          </div>
+          
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Founders Collection Coming Soon</h1>
+      <p class="services_description">Receive a Silk Token for every item purchased</p>
+      <br/>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Coming Soon</h2>
+          <p>Description </p>
+          <div class="services__btn"><button>See Product</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Logo T</h2>
+          <p>Represent SRS</p>
+          <div class="services__btn"><button>See Product</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Long Sleeve</h2>
+          <p>100 Combinations</p>
+          <div class="services__btn"><button>See Product</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Polo</h2>
+          <p>1000's of colors</p>
+          <div class="services__btn"><button>See Product</button></div>
+        </div>
+      </div>
+    </div>
+</script>
+
+
+    <!-- Features Section  -->
+    <div class="main" id="sign-up">
+      <img class ="center" src="map.png" width= 250 height="auto">
+      <!-- <div class="main__container">
+        <div class="main__content">
+          <h1>Join Our Team</h1>
+          <h2>Sign Up Today</h2>
+          <p>See what makes us different</p>
+          <button class="main__btn"><a href="#">Sign Up</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <img src="bluenowrite.jpeg" alt= "SRS logo" width="250" height="250"/>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      
+      <div class="footer__links">
+        
+        <div class="footer__link--wrapper">
+          <div >
+            <img src = "reman.png" width = 60% height = auto>
+            </div>
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="whitepaper.html">Whitepaper</a> <a href="#sign-up">Roadmap</a>
+            <!-- <a href="/">The Creators </a> <a href="/">Terms of Service</a> -->
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <!-- <a href="/">Destinations</a> -->
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> 
+            <a href="https://discord.gg/5mAkcjFmPh">Discord</a> 
+            <!-- <a href="/">Facebook</a> -->
+            <a href="https://www.youtube.com/channel/UCCdixlm9LAvKqu32sA2rlAQ">Youtube</a> <a href="/">Twitter</a>
+          </div>
+          <div >
+            <img src = "man.png" width = 60% height = auto>
+            </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">Silk Road Swag</a>
+          </div>
+          <p class="website__rights">© Silk Road Swag 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCCdixlm9LAvKqu32sA2rlAQ" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+  <script>
+    // When the user clicks on div, open the popup
+    function openForm() {
+  document.getElementById("myForm").style.display = "block";
+    }
+  function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+    </script>
+     <!--  <script src="test.js">
+  </script-->
+ 
+</html>
